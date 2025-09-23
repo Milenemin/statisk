@@ -1,0 +1,5 @@
+.category-list {
+  display: flex;
+  flex-direction: column;
+  color: rgb(85, 21, 21);
+}
