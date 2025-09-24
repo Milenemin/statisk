@@ -4,15 +4,34 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Alt";
+  src: url(fonts/MontserratAlternates-Regular.ttf);
+}
 body {
   background-color: #ffe0d3;
+  font-family: Montserrat-Regular;
 }
 header {
   background-color: #cb9b8a;
   padding-top: 5rem;
   margin-bottom: 5rem;
 }
-
+.logo {
+  object-fit: cover;
+  height: 3rem;
+  align-self: first baseline;
+  display: flex;
+  justify-content: flex-;
+}
+h1 {
+  margin-bottom: 2rem;
+  font-family: Montserrat-Regular;
+}
 .category-section {
   margin-top: 1.5rem;
   display: flex;
@@ -38,13 +57,15 @@ header {
 
 footer {
   /* background-color: #c6d2be; */
-  background-color: #cb9b8a;
+  background-color: #c6d2be;
   margin-top: 4rem;
+  padding: 3rem;
 }
 a {
   text-align: center;
   text-decoration: none;
   color: rgb(23, 18, 7);
+  font-family: "Montserrat-Alt";
 }
 h3 {
   text-align: center;
@@ -120,4 +141,7 @@ nav {
 button {
   width: 7rem;
   height: 2rem;
+}
+p footer {
+  text-align: center;
 }
