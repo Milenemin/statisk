@@ -66,11 +66,6 @@ h4 {
   margin-top: 2rem;
 }
 
-.sub-category-section {
-  display: grid;
-  gap: 2rem;
-}
-
 footer {
   /* background-color: #c6d2be; */
   background-color: #c6d2be;
@@ -89,11 +84,8 @@ h3 {
   font-size: 2rem;
 }
 
-.sub-category-section a {
-  padding-left: 2rem;
+.sub-category-section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
   gap: 2rem;
 }
 
@@ -101,6 +93,14 @@ h3 {
   height: 10rem;
   width: auto;
   grid-row: 1 / span 2;
+}
+
+.sub-category-section a {
+  padding-left: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
 }
 
 .sub-category-section h4 {
@@ -111,6 +111,7 @@ h3 {
 .sub-category-section p {
   place-self: start start;
 }
+
 .pro3-button-so {
   position: relative;
 }
@@ -119,9 +120,27 @@ h3 {
   content: "Sold Out";
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 80rem;
   background: red;
   color: white;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+.pro2-button-discount {
+  position: relative;
+}
+
+.pro2-button-discount::after {
+  content: "On Sale";
+  position: absolute;
+  top: 10px;
+  right: 80rem;
+  background: rgb(248, 201, 61);
+  color: white;
+  font-weight: bold;
+  font-size: medium;
   padding: 5px 10px;
   font-size: 0.9rem;
   border-radius: 4px;
