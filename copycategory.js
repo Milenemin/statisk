@@ -1,7 +1,8 @@
 const params = new URLSearchParams(window.location.search);
-const id = params.get("category");
+const category = params.get("category");
 console.log("category");
 const productList = document.querySelector("main");
+document.querySelector("h3").textContent = category;
 
 fetch(`https://kea-alt-del.dk/t7/api/products?limit=20&category=${category}`)
   .then((res) => res.json())
