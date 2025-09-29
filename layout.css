@@ -48,6 +48,11 @@ h4 {
   font-weight: bold;
   color: #7a9567;
 }
+h5,
+h6 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
 .category-section {
   margin-top: 1.5rem;
   display: flex;
