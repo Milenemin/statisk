@@ -18,19 +18,21 @@ function showFiltered() {
 }
 let allData;
 
-fetch(`https://kea-alt-del.dk/t7/api/products?limit=20&category=${category}`)
+fetch(`https://kea-alt-del.dk/t7/api/products?limit=50&category=${category}`)
   .then((response) => response.json())
   .then((data) => {
-    alldata = data;
+    allData = data;
+    console.log(allData);
     showProducts(allData);
   });
 
 function showProducts(products) {
+  console.log(products);
   productList.innerHTML = "";
   products.forEach((element) => {
     console.log(element);
     productList.innerHTML += `
-    <section class="prolist-grid">
+    <article>
         <a class="pro1-button" href="product.html?id=${element.id}">
          <img class="img1" src="https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp" />
 
@@ -42,6 +44,6 @@ function showProducts(products) {
           <p class="p3">Read More</p>
           </div>
         </a>
-    </section>`;
+    </article>`;
   });
 }
