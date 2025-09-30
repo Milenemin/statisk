@@ -54,6 +54,10 @@ h6 {
   font-size: 1.2rem;
   font-weight: normal;
 }
+
+#filterbuttons {
+  margin-bottom: 3rem;
+}
 .category-section {
   margin-top: 1.5rem;
   display: flex;
@@ -90,7 +94,7 @@ h3 {
   font-size: 2rem;
 }
 
-.pro1-button {
+.prolist-grid {
   display: grid;
   grid-template-columns: 1fr 1fr; /* two equal columns */
   align-items: start; /* top align text + image */
@@ -148,6 +152,10 @@ h3 {
   padding: 5px 10px;
   font-size: 0.9rem;
   border-radius: 4px;
+}
+
+#productcontainer {
+  margin-left: 5rem;
 }
 nav {
   display: flex;

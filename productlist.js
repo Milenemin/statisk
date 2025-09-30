@@ -1,21 +1,39 @@
 const params = new URLSearchParams(window.location.search);
 const category = params.get("category");
-console.log("category");
+console.log(category);
 const productList = document.querySelector("main");
+
 document.querySelector("h3").textContent = category;
 
+document.querySelectorAll("#filterbuttons button").forEach((knap) => knap.addEventListener("click", showFiltered));
+
+function showFiltered() {
+  const filter = this.dataset.gender;
+  if (filter == "All") {
+    showProducts(allData);
+  } else {
+    const udsnit = allData.filter((product) => product.gender == filter);
+    showProducts(udsnit);
+  }
+}
+let allData;
+
 fetch(`https://kea-alt-del.dk/t7/api/products?limit=20&category=${category}`)
-  .then((res) => res.json())
-  .then((data) => showProducts(data));
+  .then((response) => response.json())
+  .then((data) => {
+    alldata = data;
+    showProducts(allData);
+  });
 
 function showProducts(products) {
+  productList.innerHTML = "";
   products.forEach((element) => {
     console.log(element);
     productList.innerHTML += `
-    <section class="sub-category-section">
+    <section class="prolist-grid">
         <a class="pro1-button" href="product.html?id=${element.id}">
-          <img class="img1"
-          src="https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp" />
+         <img class="img1" src="https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp" />
+
          <div class="words">
           <h4>${element.productdisplayname}</h4>
           <p>Price: ${element.price} DKK</p>
