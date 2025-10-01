@@ -9,14 +9,20 @@
   <script src="productlist.js" defer></script>
   <body>
     <header>
-      <img src="photos/logoimg.png" alt="logo fashionRus" class="logo" />
+      <a href="index.html"> <img class="logo" src="photos/logo.svg" alt="logo fashionRus" class="logo" </a>
     </header>
     <nav>
       <a href="index.html">Home > </a>
       <p>Category</p>
     </nav>
-    <main>
-      <h3>Category</h3>
+    <section id="filterbuttons">
+      <button class="g-b" data-gender="All">All</button>
+      <button class="g-b" data-gender="Unisex">Unisex</button>
+      <button class="g-b" data-gender="Women">Women</button>
+      <button class="g-b" data-gender="Men">Men</button>
+    </section>
+    <h3>Category</h3>
+    <main class="productlist prolist-grid">
       <!-- <section class="sub-category-section">
         <a class="pro1-button" href="product.html?id=1165">
           <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" />
@@ -29,6 +35,7 @@
           <img src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp" />
           <h4>Accessories</h4>
           <p>Price: 700 DKK</p>
+          p
 
           <p class="p3">Read More</p>
         </a>

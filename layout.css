@@ -28,13 +28,14 @@ header {
   display: flex;
   justify-content: flex-;
   margin-top: -3rem;
+  margin-left: 1rem;
 }
 
 main {
   font-size: 1.2rem;
 }
 h1 {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   font-family: Montserrat-Regular;
 }
 
@@ -44,17 +45,30 @@ h2 {
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #7a9567;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 h5,
 h6 {
   font-size: 1.2rem;
   font-weight: normal;
 }
-.category-section {
+
+#filterbuttons {
+  margin-bottom: 3rem;
+}
+.g-b {
+  height: 3rem;
+  width: 6rem;
+  background-color: #c6d2be;
+  border-radius: 0.5rem;
+  font-family: "Montserrat-Regular";
+  font-weight: bolder;
+  box-shadow: none;
+}
+/* .category-section {
   margin-top: 1.5rem;
   display: flex;
   gap: 2rem;
@@ -70,8 +84,27 @@ h6 {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+} */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
+  gap: 1rem;
+  margin: 0 2rem;
+  text-align: center;
 }
-
+.button-index {
+  padding-left: 3.5rem;
+  padding-top: 1rem;
+  display: flex;
+  margin: auto;
+  place-self: center center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: #c9cff2;
+  border-radius: 1rem;
+  height: 4rem;
+  width: 14rem;
+}
 footer {
   /* background-color: #c6d2be; */
   background-color: #c6d2be;
@@ -90,20 +123,20 @@ h3 {
   font-size: 2rem;
 }
 
-.pro1-button {
+.prolist-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* two equal columns */
+  grid-template-columns: 1fr 1fr 1fr; /* two equal columns */
   align-items: start; /* top align text + image */
-  gap: 2rem; /* space between image + text */
-  margin-left: 2rem;
+  margin-left: 3rem; /* space between image + text */
+  margin-right: 3rem;
 }
 
 .img1 {
   grid-column: 1; /* left column */
   grid-row: 1;
   max-width: 17rem;
+  text-align: center;
   height: auto;
-  margin-bottom: 5rem;
 }
 
 .words {
@@ -111,11 +144,25 @@ h3 {
   grid-row: 1;
   display: flex;
   flex-direction: column;
-  margin-top: 4.5rem;
-  text-align: left;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  text-align: center;
   justify-content: space-between;
+  line-height: 2.5rem;
 }
 
+.price-discount {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.discount {
+  background-color: #f66262;
+  margin-left: 1rem;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}
 .pro3-button-so {
   position: relative;
 }
@@ -149,6 +196,10 @@ h3 {
   font-size: 0.9rem;
   border-radius: 4px;
 }
+
+#productcontainer {
+  margin-left: 5rem;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -160,6 +211,13 @@ nav {
   place-self: start start;
   visibility: hidden;
 }
+.sold-out {
+  height: auto;
+  background-color: rgb(255, 247, 106);
+  border-radius: 0.2rem;
+  align-self: center;
+  padding: 0.2rem;
+}
 
 #discount {
   color: green;
@@ -167,23 +225,45 @@ nav {
   visibility: hidden;
 }
 
+.read-more {
+  margin-top: 1rem;
+  font-weight: bolder;
+  font-size: large;
+  text-decoration: underline;
+}
 .pro-desc {
   grid-column: 2;
   grid-row: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 0rem;
+  line-height: 2rem;
+  margin-left: 4rem;
 }
 .img-extra img {
-  height: 20rem;
+  height: 25rem;
   width: auto;
   object-fit: cover;
 }
 
+.product-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.brand {
+  color: #8d827d;
+}
 button {
   width: 7rem;
   height: 2rem;
+  background-color: #e5e8f6;
+  font-family: Montserrat-Alt;
+  font-weight: bolder;
+  border-radius: 0.2rem;
 }
+
 p footer {
   text-align: center;
 }

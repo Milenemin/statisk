@@ -18,8 +18,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
     </div>
     <div class="pro-desc">
     <h4> ${product.productdisplayname}</h4>
-    <h5 class="articleType">Type:</span> ${product.articletype}</h5>
-    <h6>Brand:  ${product.brandname}</h6>
+    <h6 class="brand">  ${product.brandname}  | </span> ${product.articletype}</h6>
     <p>Production year: ${product.productionyear}</p>
     <form action="">
     <label for="Size">Choose a Size:</label>
