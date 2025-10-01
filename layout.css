@@ -34,7 +34,7 @@ main {
   font-size: 1.2rem;
 }
 h1 {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   font-family: Montserrat-Regular;
 }
 
@@ -58,7 +58,16 @@ h6 {
 #filterbuttons {
   margin-bottom: 3rem;
 }
-.category-section {
+.g-b {
+  height: 3rem;
+  width: 9rem;
+  background-color: #c6d2be;
+  border-radius: 0.5rem;
+  font-family: "Montserrat-Regular";
+  font-weight: bolder;
+  box-shadow: none;
+}
+/* .category-section {
   margin-top: 1.5rem;
   display: flex;
   gap: 2rem;
@@ -74,8 +83,27 @@ h6 {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+} */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
+  gap: 1rem;
+  margin: 0 2rem;
+  text-align: center;
 }
-
+.button-index {
+  padding-left: 3.5rem;
+  padding-top: 1rem;
+  display: flex;
+  margin: auto;
+  place-self: center center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: #c9cff2;
+  border-radius: 1rem;
+  height: 4rem;
+  width: 14rem;
+}
 footer {
   /* background-color: #c6d2be; */
   background-color: #c6d2be;
@@ -96,9 +124,10 @@ h3 {
 
 .prolist-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* two equal columns */
+  grid-template-columns: 1fr 1fr 1fr; /* two equal columns */
   align-items: start; /* top align text + image */
   gap: 2rem; /* space between image + text */
+
   margin-left: 2rem;
 }
 
@@ -106,8 +135,8 @@ h3 {
   grid-column: 1; /* left column */
   grid-row: 1;
   max-width: 17rem;
+  text-align: center;
   height: auto;
-  margin-bottom: 5rem;
 }
 
 .words {
@@ -115,8 +144,10 @@ h3 {
   grid-row: 1;
   display: flex;
   flex-direction: column;
-  margin-top: 4.5rem;
-  text-align: left;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  margin-left: -10rem;
+  text-align: center;
   justify-content: space-between;
 }
 
@@ -168,6 +199,12 @@ nav {
   place-self: start start;
   visibility: hidden;
 }
+.sold-out {
+  height: auto;
+  width: 10rem;
+  border: 1px solid red;
+  background-color: red;
+}
 
 #discount {
   color: green;
@@ -181,11 +218,13 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 10rem;
 }
 .img-extra img {
   height: 20rem;
   width: auto;
   object-fit: cover;
+  margin-left: 10rem;
 }
 
 button {

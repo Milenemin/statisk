@@ -1,4 +1,4 @@
-const categorylist = document.querySelector(".category-section");
+const categorylist = document.querySelector("#category-section");
 const articletitle = document.querySelector("h4");
 fetch("https://kea-alt-del.dk/t7/api/categories")
   .then((response) => response.json())
@@ -6,7 +6,9 @@ fetch("https://kea-alt-del.dk/t7/api/categories")
 
 function showCategories(categories) {
   categories.forEach((category) => {
-    categorylist.innerHTML += `<a href="productlist.html?category=${category.category}">${category.category}</a>`;
+    categorylist.innerHTML += `<a class="button-index" href="productlist.html?category=${category.category}">
+        ${category.category}
+      </a>`;
   });
 }
 

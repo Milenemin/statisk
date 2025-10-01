@@ -39,8 +39,8 @@ function showProducts(products) {
          <div class="words">
           <h4>${element.productdisplayname}</h4>
           <p>Price: ${element.price} DKK</p>
-          ${element.discount ? `<p class="p3">Discount:${element.discount}</p>` : ""}
-          ${element.soldout ? `<p class="p3">Discount:${element.soldout}</p>` : ""}
+          ${element.discount ? `<p class="p3">Discount:${element.discount}%</p>` : ""}
+          ${element.soldout ? `<p class="sold-out">Sold Out</p>` : ""}
           <p class="p3">Read More</p>
           </div>
         </a>
