@@ -47,7 +47,7 @@ h4 {
   font-size: 1.4rem;
   font-weight: bold;
   color: #7a9567;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 h5,
 h6 {
@@ -146,11 +146,23 @@ h3 {
   flex-direction: column;
   margin-top: 3rem;
   margin-bottom: 5rem;
-  margin-left: -10rem;
   text-align: center;
   justify-content: space-between;
+  line-height: 2.5rem;
 }
 
+.price-discount {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.discount {
+  background-color: #f56a6a;
+  margin-left: 1rem;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}
 .pro3-button-so {
   position: relative;
 }
@@ -201,9 +213,10 @@ nav {
 }
 .sold-out {
   height: auto;
-  width: 10rem;
-  border: 1px solid red;
-  background-color: red;
+  background-color: rgb(255, 247, 106);
+  border-radius: 0.2rem;
+  align-self: center;
+  padding: 0.2rem;
 }
 
 #discount {
@@ -212,21 +225,34 @@ nav {
   visibility: hidden;
 }
 
+.read-more {
+  margin-top: 1rem;
+  font-weight: bolder;
+  font-size: large;
+  text-decoration: underline;
+}
 .pro-desc {
   grid-column: 2;
   grid-row: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-left: 10rem;
+  margin-left: 0rem;
+  line-height: 2rem;
 }
 .img-extra img {
-  height: 20rem;
+  height: 25rem;
   width: auto;
   object-fit: cover;
-  margin-left: 10rem;
 }
 
+.product-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.brand {
+  color: #dacbc5;
+}
 button {
   width: 7rem;
   height: 2rem;

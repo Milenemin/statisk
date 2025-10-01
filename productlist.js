@@ -32,16 +32,18 @@ function showProducts(products) {
   products.forEach((element) => {
     console.log(element);
     productList.innerHTML += `
-    <article>
+    <article class="product-wrapper">
         <a class="pro1-button" href="product.html?id=${element.id}">
          <img class="img1" src="https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp" />
 
          <div class="words">
           <h4>${element.productdisplayname}</h4>
+           <div class="price-discount">
           <p>Price: ${element.price} DKK</p>
-          ${element.discount ? `<p class="p3">Discount:${element.discount}%</p>` : ""}
+          ${element.discount ? `<p class="discount">${element.discount}%</p>` : ""}
+          </div>
           ${element.soldout ? `<p class="sold-out">Sold Out</p>` : ""}
-          <p class="p3">Read More</p>
+          <p class="read-more">Read More</p>
           </div>
         </a>
     </article>`;
