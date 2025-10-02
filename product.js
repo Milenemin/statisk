@@ -30,7 +30,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
     </select>
     </form>
     <p>Price: ${product.price}</p>
-    <button>Buy</button>
+    <button>Add to Basket</button>
     </div>
     </section>
     </main> `;
