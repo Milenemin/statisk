@@ -115,7 +115,7 @@ a {
   text-align: center;
   text-decoration: none;
   color: rgb(23, 18, 7);
-  font-family: "Montserrat-Alt";
+  font-family: "Montserrat-Regular";
 }
 h3 {
   text-align: center;
@@ -160,6 +160,7 @@ h3 {
 .discount {
   background-color: #f66262;
   margin-left: 1rem;
+  margin-right: 1.3rem;
   padding: 0.2rem;
   border-radius: 0.2rem;
 }
